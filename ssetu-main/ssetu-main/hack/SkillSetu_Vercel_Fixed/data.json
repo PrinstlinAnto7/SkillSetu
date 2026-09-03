@@ -1,0 +1,78 @@
+{
+  "skills": [
+    { "id": "ayur-diag", "name": "Ayurvedic Diagnosis (Nadi Pariksha)", "category": "Clinical" },
+    { "id": "panchakarma", "name": "Panchakarma Therapy", "category": "Clinical" },
+    { "id": "yoga-instr", "name": "Yoga Instruction", "category": "Clinical" },
+    { "id": "herb-pharma", "name": "Herbal Pharmacology", "category": "Clinical" },
+    { "id": "patient-comm", "name": "Patient Communication", "category": "Communication" },
+    { "id": "regional-lang", "name": "Regional-Language Counselling", "category": "Communication" },
+    { "id": "python", "name": "Python Basics", "category": "Software" },
+    { "id": "react", "name": "React.js", "category": "Software" },
+    { "id": "data-entry", "name": "Digital Health Records", "category": "Software" },
+    { "id": "research-lit", "name": "Clinical Literature Review", "category": "Research" },
+    { "id": "data-analysis", "name": "Basic Data Analysis", "category": "Research" }
+  ],
+
+  "students": [
+    {
+      "id": "s1",
+      "name": "Ananya R.",
+      "college": "Govt. Ayurveda College, Trivandrum",
+      "passportId": "SS-PW-40217",
+      "skills": [
+        { "skillId": "ayur-diag", "proficiency": "Advanced", "status": "verified", "date": "2026-07-02", "verId": "VER-A1B2C3", "qr": null },
+        { "skillId": "panchakarma", "proficiency": "Intermediate", "status": "verified", "date": "2026-07-02", "verId": "VER-D4E5F6", "qr": null },
+        { "skillId": "patient-comm", "proficiency": "Advanced", "status": "verified", "date": "2026-06-18", "verId": "VER-G7H8I9", "qr": null },
+        { "skillId": "python", "proficiency": "Beginner", "status": "pending", "date": null, "verId": null, "qr": null }
+      ]
+    },
+    {
+      "id": "s2",
+      "name": "Farhan K.",
+      "college": "National Institute of Unani Medicine",
+      "passportId": "SS-PW-40218",
+      "skills": [
+        { "skillId": "herb-pharma", "proficiency": "Advanced", "status": "verified", "date": "2026-07-10", "verId": "VER-J1K2L3", "qr": null },
+        { "skillId": "research-lit", "proficiency": "Intermediate", "status": "verified", "date": "2026-07-10", "verId": "VER-M4N5O6", "qr": null },
+        { "skillId": "regional-lang", "proficiency": "Advanced", "status": "pending", "date": null, "verId": null, "qr": null }
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "Meera S.",
+      "college": "Siddha Medical College, Chennai",
+      "passportId": "SS-PW-40219",
+      "skills": [
+        { "skillId": "yoga-instr", "proficiency": "Advanced", "status": "verified", "date": "2026-06-30", "verId": "VER-P7Q8R9", "qr": null },
+        { "skillId": "data-entry", "proficiency": "Intermediate", "status": "verified", "date": "2026-06-30", "verId": "VER-S1T2U3", "qr": null },
+        { "skillId": "data-analysis", "proficiency": "Beginner", "status": "verified", "date": "2026-07-15", "verId": "VER-V4W5X6", "qr": null },
+        { "skillId": "patient-comm", "proficiency": "Intermediate", "status": "pending", "date": null, "verId": null, "qr": null }
+      ]
+    }
+  ],
+
+  "jobs": [
+    {
+      "id": "j1",
+      "title": "Panchakarma Therapy Intern",
+      "org": "Wellness Grove AYUSH Hospital",
+      "loc": "Kochi",
+      "requirements": [
+        { "skillId": "panchakarma", "weight": 3 },
+        { "skillId": "ayur-diag", "weight": 2 },
+        { "skillId": "patient-comm", "weight": 1 }
+      ]
+    },
+    {
+      "id": "j2",
+      "title": "Digital Health Records Associate",
+      "org": "AYUSH Grid Digital Initiative",
+      "loc": "Remote",
+      "requirements": [
+        { "skillId": "data-entry", "weight": 2 },
+        { "skillId": "data-analysis", "weight": 2 },
+        { "skillId": "python", "weight": 1 }
+      ]
+    }
+  ]
+}

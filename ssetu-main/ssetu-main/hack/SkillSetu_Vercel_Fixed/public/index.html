@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SkillSetu — Verified Skills. Better Opportunities.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AUTH / LANDING -->
+<section id="authScreen" class="auth-screen">
+  <div class="auth-hero">
+    <div class="hero-top">
+      <div class="brand brand-light"><span class="brand-logo">S</span><span>SkillSetu</span></div>
+      <button class="ghost-btn" id="existingLoginBtn">Login</button>
+    </div>
+    <div class="hero-content">
+      <div class="hero-copy">
+        <div class="pill"><span class="dot"></span> Verified skills · Smart matching · Institutional insights</div>
+        <h1>Bridging <span>Skills</span><br>with <span>Opportunities</span></h1>
+        <p>One trusted platform connecting students, colleges and companies through verified skills, meaningful opportunities and skill-demand intelligence.</p>
+        <div class="hero-metrics">
+          <div><b>Verified</b><small>skill passports</small></div>
+          <div><b>Smart</b><small>opportunity matching</small></div>
+          <div><b>Connected</b><small>academia + industry</small></div>
+        </div>
+      </div>
+      <div class="login-card" id="loginCard">
+        <div class="login-heading"><span class="mini-logo">S</span><div><h2>Welcome back!</h2><p>Choose how you want to continue</p></div></div>
+        <div class="role-tabs" id="loginRoleTabs">
+          <button data-role="student" class="role-tab active">Student</button>
+          <button data-role="college" class="role-tab">College</button>
+          <button data-role="company" class="role-tab">Company</button>
+        </div>
+        <form id="loginForm">
+          <label>Email or phone<input id="loginEmail" required placeholder="you@example.com"></label>
+          <label>Password<input id="loginPassword" type="password" required placeholder="Enter password"></label>
+          <div class="login-options"><label class="check"><input type="checkbox"> Remember me</label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <button class="primary-btn wide" type="submit">Login <span>→</span></button>
+        </form>
+        <div class="or"><span>or</span></div>
+        <button class="outline-btn wide" id="registerBtn">Create a new account</button>
+        <p class="demo-note">Demo access: enter any email and password.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRATION WIZARD -->
+<section id="registerScreen" class="registration-screen hidden">
+  <div class="reg-shell">
+    <div class="reg-brand"><span class="brand-logo">S</span><span>SkillSetu</span></div>
+    <button class="text-btn" id="backToLogin">← Back to login</button>
+    <div class="progress-head">
+      <div><span class="step active">1</span><b>Choose role</b></div><i></i><div><span class="step">2</span><b>Create account</b></div><i></i><div><span class="step">3</span><b>Complete profile</b></div>
+    </div>
+    <div id="registerContent"></div>
+  </div>
+</section>
+
+<!-- APP -->
+<div id="appShell" class="app-shell hidden">
+  <aside class="sidebar">
+    <div class="side-brand"><span class="brand-logo">S</span><div><b>SkillSetu</b><small>Connect · Verify · Grow</small></div></div>
+    <nav id="sideNav"></nav>
+    <div class="side-user" id="sideUser"></div>
+    <div class="side-trust"><span>✓</span><div><b>Your Data, Your Control</b><small>Consent-based sharing</small></div></div>
+  </aside>
+  <main class="app-main">
+    <header class="app-header">
+      <div class="mobile-menu" id="mobileMenu">☰</div>
+      <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search opportunities, skills, companies..."></div>
+      <div class="header-actions"><button class="icon-btn">♧</button><button class="icon-btn">◔</button><div class="avatar" id="headerAvatar">V</div></div>
+    </header>
+    <div class="page-wrap" id="pageWrap"></div>
+  </main>
+</div>
+
+<!-- MODALS -->
+<div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal-card" id="modalCard"></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
